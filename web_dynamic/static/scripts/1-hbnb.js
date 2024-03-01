@@ -10,10 +10,10 @@ $(document).ready(function() {
     } else {
       var index = myamt.indexOf(amenityId);
       if (index !== -1) {
-        selectedAmenities.splice(index, 1);
+        myamt.splice(index, 1);
       }
     }
 
-    $('#amenities').text(selectedAmenities.join(', '));
+    $('#amenities').text(myamt.join(', '));
   });
 });
