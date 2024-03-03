@@ -35,7 +35,7 @@ $(document).ready(function() {
     dataType: 'json',
     contentType: 'application/json',
     success: function (data) {
-      data.forEach(place => {
+      data.forEach(let place => {
         const article = document.createElement('article');
         article.innerHTML = `
         <div class="title_box">
@@ -54,8 +54,8 @@ $(document).ready(function() {
         ${place.description}
         </div>
         `;
-        $('.places ').append(article);
-      }
+        $('section.places ').append(article);
+      })
     }
   });
 
