@@ -16,8 +16,8 @@ $(document).ready(function() {
 
     $('#amenities').text(selectedAmenities.join(', '));
   });
-});
-  $.get('http://0.0.0.0:5001/api/v1/status/', function (data, textStatus) {
+
+  $.get('http://0.0.0.0:5003/api/v1/status/', function (data, textStatus) {
     if (textStatus === 'success') {
       if (data.status === 'OK') {
         $('#api_status').addClass('available');
